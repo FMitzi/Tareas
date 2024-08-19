@@ -78,7 +78,7 @@ void RecorridoZ (){
 int menu (){
 	int opcion;
 	
-	printf("Seleccione un tipo de recorrido: ");
+	printf("\nSeleccione un tipo de recorrido: \n");
 
 	printf("1. Recorrido en Zigzag\n");
 	printf("2. Recorrido en Z invertido\n");
