@@ -1,13 +1,13 @@
 [Project]
-FileName=list.dev
-Name=list
+FileName=Prueba.dev
+Name=Prueba
 Type=1
 Ver=2
 ObjFiles=
-Includes=C:\Users\usuario\OneDrive\Documentos\Clase-04\code\include
+Includes=
 Libs=
 PrivateResource=
-ResourceIncludes=C:\Users\usuario\OneDrive\Documentos\Clase-04\code\source
+ResourceIncludes=
 MakeIncludes=
 Compiler=
 CppCompiler=
@@ -19,7 +19,7 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=list.exe
+OverrideOutputName=
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -27,8 +27,8 @@ CommandLine=
 Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
-CompilerSet=3
-CompilerSettings=0000000100000000000000000
+CompilerSet=5
+CompilerSettings=0000000100000000100000000
 UnitCount=1
 
 [VersionInfo]
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=F:\Recorrido de Matrices\Recorrido de Matrices.c
+FileName=Recorridos.c
 CompileCpp=0
 Folder=
 Compile=1
