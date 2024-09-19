@@ -1,0 +1,130 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void portada (){
+	
+	printf("\t\tRECORRIDO DE MATRICES\n\n");
+	printf("Objetivo: Recorrer las matrices de distintas formas.\n\n");
+	printf("Estudiantes y No. Cuenta:\n");
+	printf(">Benavides Garcia Luis Alberto ---- 319236606.\n");
+	printf(">Franco Mitzi Natalie Gabrielle --- 424038010.\n");
+	printf(">Semestre: III \t>Grupo: 1301\n");
+	printf(">Asignatura: Estructura de Datos\n\n\n"); 
+			
+	system("pause");
+	system("cls");
+}
+
+void ZigZag (){
+    system("cls");  
+	int i, j;
+    int col=4;
+    int fila=6;
+    
+    
+	int matzz[6][4] = {
+	  { 1,  2,  3,  4},
+      { 5,  6,  7,  8},
+      {9, 10, 11, 12},
+      {13, 14, 15, 16},
+      {17, 18, 19, 20},
+      {21, 22, 23, 24}
+	};
+	
+	
+	for (i = 0; i < fila; i++) {
+        if (i % 2 == 0) {  // Si es par, recorrer de izquierda a derecha
+            for (j = 0; j < col; j++) {
+                printf("%d ", matzz[i][j]);
+            }
+        } else {  // Si es impar, recorrer de derecha a izquierda
+            for (j = col - 1; j >= 0; j--) {
+                printf("%d ", matzz[i][j]);
+            }
+        }
+        printf("\n");  // Nueva línea después de cada fila
+    }
+
+	system("pause");
+	system("cls");
+}
+
+void RecorridoZ (){
+    int i, j;
+    int col = 4;
+    int fila = 6;
+    
+    system("cls");
+    
+    int matd[6][4] = {
+        { 1,  2,  3,  4},
+        { 5,  6,  7,  8},
+        { 9, 10, 11, 12},
+        {13, 14, 15, 16},
+        {17, 18, 19, 20},
+        {21, 22, 23, 24}
+    };
+    
+    
+    for (j = 0; j < col; j++) {
+        printf("%d ", matd[fila-1][j]);
+    }
+    
+    
+    for (i = fila - 2, j = col - 2; i > 0 && j > 0; i--, j--) {
+        printf("%d ", matd[i][j]);
+    }
+    
+    
+    for (j = col - 1; j >= 0; j--) {
+        printf("%d ", matd[0][j]);
+    }
+
+    printf("\n");
+    system("pause");
+	system("cls");
+}
+
+int menu (){
+	int opcion;
+	
+	printf("\nSeleccione un tipo de recorrido: \n");
+
+	printf("1. Recorrido en Zigzag\n");
+	printf("2. Recorrido en Z invertido\n");
+	printf("3. salir\n");
+
+	do{
+		printf("Opción: ");
+		scanf("%d", &opcion);
+	}while(opcion<1 || opcion>3);
+
+    return opcion;
+}
+
+
+int main (){
+	int respuesta;
+	
+	portada();
+	do{
+		respuesta=menu();
+
+		switch(respuesta){
+			case 1:
+				ZigZag();
+				break;
+			case 2:
+				RecorridoZ();
+				break;
+			case 3:
+			    printf("Hasta luego\n");
+			    break;
+			}
+	}while(respuesta != 3);
+	
+	system("pause");
+	
+	return 0;
+}
+
