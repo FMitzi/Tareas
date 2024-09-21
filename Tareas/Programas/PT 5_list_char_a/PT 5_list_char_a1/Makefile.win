@@ -1,0 +1,31 @@
+# Project: pt_5_list_char_a1
+# Makefile created by Dev-C++ 5.9.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = pt_5_list_char_a1.o ../../../../code/source/list.o
+LINKOBJ  = pt_5_list_char_a1.o ../../../../code/source/list.o
+LIBS     = -L"D:/Programas/Dev-Cpp/MinGW64/lib32" -L"D:/Programas/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -m32
+INCS     = -I"D:/Programas/Dev-Cpp/MinGW64/include" -I"D:/Programas/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Programas/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Users/usuario/OneDrive/Documentos/Clase-04/code/include"
+CXXINCS  = -I"D:/Programas/Dev-Cpp/MinGW64/include" -I"D:/Programas/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Programas/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"D:/Programas/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++" -I"C:/Users/usuario/OneDrive/Documentos/Clase-04/code/include"
+BIN      = pt_5_list_char_a1.exe
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+pt_5_list_char_a1.o: pt_5_list_char_a1.c
+	$(CC) -c pt_5_list_char_a1.c -o pt_5_list_char_a1.o $(CFLAGS)
+
+../../../../code/source/list.o: ../../../../code/source/list.c
+	$(CC) -c ../../../../code/source/list.c -o ../../../../code/source/list.o $(CFLAGS)

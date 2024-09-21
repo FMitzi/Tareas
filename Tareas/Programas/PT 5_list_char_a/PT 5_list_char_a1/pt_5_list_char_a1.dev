@@ -1,6 +1,6 @@
 [Project]
-FileName=list.dev
-Name=list
+FileName=pt_5_list_char_a1.dev
+Name=pt_5_list_char_a1
 Type=1
 Ver=2
 ObjFiles=
@@ -19,7 +19,7 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=list.exe
+OverrideOutputName=pt_5_list_char_a1.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=3
 CompilerSettings=0000000100000000000000000
-UnitCount=1
+UnitCount=4
 
 [VersionInfo]
 Major=1
@@ -51,7 +51,36 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=F:\Recorrido de Matrices\Recorrido de Matrices.c
+FileName=pt_5_list_char_a1.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=pt_5_list_char_a1.dev
+Folder=
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit3]
+FileName=..\..\..\..\code\include\list.h
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit4]
+FileName=..\..\..\..\code\source\list.c
 CompileCpp=0
 Folder=
 Compile=1

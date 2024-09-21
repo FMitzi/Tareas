@@ -1,15 +1,15 @@
-# Project: list
+# Project: pt_5_list_char_a2
 # Makefile created by Dev-C++ 5.9.2
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = "Recorrido\ de\ Matrices.o"
-LINKOBJ  = "Recorrido de Matrices.o"
+OBJ      = ../../../../code/source/list.o pt_5_list_char_a_2.o
+LINKOBJ  = ../../../../code/source/list.o pt_5_list_char_a_2.o
 LIBS     = -L"D:/Programas/Dev-Cpp/MinGW64/lib32" -L"D:/Programas/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -m32
 INCS     = -I"D:/Programas/Dev-Cpp/MinGW64/include" -I"D:/Programas/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Programas/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Users/usuario/OneDrive/Documentos/Clase-04/code/include"
 CXXINCS  = -I"D:/Programas/Dev-Cpp/MinGW64/include" -I"D:/Programas/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Programas/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"D:/Programas/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++" -I"C:/Users/usuario/OneDrive/Documentos/Clase-04/code/include"
-BIN      = list.exe
+BIN      = pt_5_list_char_a2.exe
 CXXFLAGS = $(CXXINCS) -m32
 CFLAGS   = $(INCS) -m32
 RM       = rm.exe -f
@@ -24,5 +24,8 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-"Recorrido\ de\ Matrices.o": Recorrido\ de\ Matrices.c
-	$(CC) -c "Recorrido de Matrices.c" -o "Recorrido de Matrices.o" $(CFLAGS)
+../../../../code/source/list.o: ../../../../code/source/list.c
+	$(CC) -c ../../../../code/source/list.c -o ../../../../code/source/list.o $(CFLAGS)
+
+pt_5_list_char_a_2.o: pt_5_list_char_a_2.c
+	$(CC) -c pt_5_list_char_a_2.c -o pt_5_list_char_a_2.o $(CFLAGS)
